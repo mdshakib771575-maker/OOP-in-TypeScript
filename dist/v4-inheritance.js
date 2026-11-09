@@ -22,14 +22,22 @@ class Employee {
     }
 }
 class Manager extends Employee {
-    teamMember;
+    temMember;
+    // teamMember: number
+    // constructor(name: string, salary: number,temMember: number, ) {
+    //     super(name, salary)
+    //     this.teamMember = temMember
+    // }
     constructor(name, salary, temMember) {
         super(name, salary);
-        this.teamMember = temMember;
+        this.temMember = temMember;
+    }
+    discribeWork() {
+        return `${this.name} manages ${this.temMember} employes`;
     }
 }
 const employee = new Employee("shakib", 20000);
 const employee2 = new Employee("shakib", 20000);
 const manager = new Manager("shakib", 20000, 20);
-console.log(manager.describe());
+console.log(manager.discribeWork());
 export {};
