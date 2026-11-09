@@ -8,7 +8,6 @@ class Employee {
     }
 }
 
-
 const employee = new Employee("shakib", 20000)
 const employee2 = new Employee("shakib", 20000)
 
