@@ -35,9 +35,13 @@ class Manager extends Employee {
     discribeWork() {
         return `${this.name} manages ${this.temMember} employes`;
     }
+    discriveManager() {
+        return `${this.name} erans ${this.salary}`;
+    }
 }
 const employee = new Employee("shakib", 20000);
 const employee2 = new Employee("shakib", 20000);
 const manager = new Manager("shakib", 20000, 20);
+console.log(manager.discribeWork());
 console.log(manager.discribeWork());
 export {};
